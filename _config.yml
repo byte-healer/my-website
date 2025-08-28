@@ -1,18 +1,102 @@
-title: Your Name
-description: Portfolio & Blog
+# Site Settings
+title: "Dr. Rajan Kumar"
+subtitle: "Doctor turned Entrepreneur"
+description: "Personal portfolio and insights from a doctor turned entrepreneur, sharing experiences at the intersection of healthcare and business innovation."
 baseurl: ""
-url: "https://yourdomain.com"
+url: "https://rajanspeaks.com"
 
+# Author Information
+author:
+  name: "Dr. Rajan Kumar"
+  title: "Doctor turned Entrepreneur"
+  email: "rajan3473p@outlook.com"
+  bio: "Bridging healthcare expertise with entrepreneurial vision to create meaningful impact."
+
+# Social Media (add your actual handles)
+social:
+  linkedin: "your-linkedin-username"
+  github: "your-github-username"
+  twitter: "your-twitter-handle"  # optional
+  # instagram: "your-instagram"   # uncomment if needed
+
+# Site Configuration
 markdown: kramdown
 highlighter: rouge
-theme: minima
+permalink: /:categories/:year/:month/:day/:title/
+timezone: Asia/Kolkata
 
+# Theme and Styling
+theme: minima
+minima:
+  skin: classic
+  social_links:
+    - { platform: linkedin, user_url: "https://linkedin.com/in/your-linkedin-username" }
+    - { platform: github, user_url: "https://github.com/your-github-username" }
+    # - { platform: twitter, user_url: "https://twitter.com/your-twitter-handle" }
+
+# Navigation
+header_pages:
+  - portfolio.md
+  - about.md
+  - blog.md
+  - contact.md
+
+# Blog Settings
+show_excerpts: true
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
-author:
-  name: Your Name
-  email: your.email@example.com
+# SEO Settings
+google_analytics: # Add your GA tracking ID later
+lang: en
+locale: en_IN
 
-show_excerpts: true
+# Professional Settings
+logo: /assets/images/logo.png  # Add your professional headshot or logo
+excerpt_separator: <!--more-->
+
+# Collections (for organizing portfolio items)
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Dr. Rajan Kumar"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE.md
+
+# Professional Footer
+footer_content: "© 2025 Dr. Rajan Kumar. Bridging healthcare and entrepreneurship."
