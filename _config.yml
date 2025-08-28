@@ -2,7 +2,7 @@
 title: "Dr. Rajan Kumar"
 subtitle: "Doctor turned Entrepreneur"
 description: "Personal portfolio and insights from a doctor turned entrepreneur, sharing experiences at the intersection of healthcare and business innovation."
-baseurl: ""
+baseurl: "https://rajanspeaks.com"
 url: "https://rajanspeaks.com"
 
 # Author Information
@@ -10,13 +10,13 @@ author:
   name: "Dr. Rajan Kumar"
   title: "Doctor turned Entrepreneur"
   email: "rajan3473p@outlook.com"
-  bio: "Bridging healthcare expertise with entrepreneurial vision to create meaningful impact."
+  bio: "Creating meaningful impact, one post at a time!"
 
 # Social Media (add your actual handles)
 social:
-  linkedin: "your-linkedin-username"
-  github: "your-github-username"
-  twitter: "your-twitter-handle"  # optional
+  linkedin: "rajank99"
+  github: "byte-healer"
+  twitter: "iCuriousRajan"  # optional
   # instagram: "your-instagram"   # uncomment if needed
 
 # Site Configuration
